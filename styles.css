@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
 html,
 body {
     margin: 0;
@@ -10,16 +11,121 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 6fr;
-    grid-template-rows: 1fr 6fr;
+    grid-template-columns:1fr 6fr;
+    grid-template-rows: 1fr 8fr;
     width: 100vw;
     height: 100vh;
 }
 
 .header {
+    
     background-color: white;
     grid-area: 1 / 2 / 2 / -1;
+    display: grid;
+   
+    grid-template-rows: 150px 150px;
+    padding: 0px 140px 0px 90px;
+    border-bottom:5px solid rgb(168, 160, 160);
 
+}
+
+.header button {
+   height: 60px;
+   border-radius:40px;
+   font-size:1.15em;
+   font-weight:bold;
+   background-color:rgb(49, 128, 207);
+   color:white;
+   border:0px ;
+
+   width:130px;
+
+
+   justify-self: center;
+}
+
+#notifications,
+#search {
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.profile-picture {
+    max-width: 80px;
+    min-width: 80px;
+}
+
+.header-top {
+
+    align-items: center;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: .4fr 6fr 1fr .5fr 1fr 1.3fr;
+}
+
+.header div {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align:left;
+    white-space: nowrap;
+}
+.name  {
+    text-align:center;
+    justify-self:center;
+    
+    
+    
+}
+
+.header-bottom {
+
+    align-items: center;
+    display: grid;
+    gap:35px;
+    grid-template-columns: .5fr 6fr .8fr .8fr .8fr ;
+}
+
+.icon[alt="search"] {
+    justify-self: left;
+}
+
+.profile-picture {
+    background-color: pink;
+    border-radius: 50%;
+    justify-self: center;
+    width:100px;
+    height:100px;
+    max-width:100px;
+}
+
+.header-top .profile-picture {
+    min-width: 60px;
+    min-height: 60px;
+    max-width: 60px;
+    max-height: 60px;
+    border-radius: 50%;
+}
+
+.search-bar {
+    height: 30%;
+    border-radius: 1.625rem;
+    background-color: rgb(220, 220, 220);
+    border-color: transparent;
+    width: 100%;
+    justify-self: start;
+
+}
+
+#hello {
+    font-size:.9em;
+}
+
+
+.introduction {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    align-items:center;
+    justify-self:left;
 }
 
 .sidebar {
@@ -34,52 +140,55 @@ body {
 .logo {
     display: grid;
     grid-template-columns: .3fr 1fr;
-    gap:10px;
+    gap: 10px;
     text-align: left;
     color: white;
     font-size: 2.2em;
-    align-items:center;
-    font-weight:bold;
+    align-items: center;
+    font-weight: bold;
 }
 
 .logo img {
     filter: invert(100%);
     max-width: 80px;
     max-height: 80px;
-    justify-self:center;
-    min-width:40px;
-    min-height:40px;
+    justify-self: center;
+    min-width: 40px;
+    min-height: 40px;
 }
 
 
 .icon-text {
     display: grid;
     grid-template-columns: .3fr 1fr;
-    gap:10px;
+    gap: 10px;
     text-align: left;
     color: white;
     font-size: 1.5em;
-    align-items:center;
+    align-items: center;
 }
 
-.icon-text img {
+.icon {
     color: white;
-    filter: invert(100%);
-    max-width: 50px;
-    max-height: 50px;
-    min-width:40px;
-    min-height:40px;
-    justify-self:center;
-    
+    max-width: 40px;
+    max-height: 40px;
+    min-width: 30px;
+    min-height: 30px;
+    justify-self: center;
+
 }
 
-button {
+.sidebar .icon {
+    filter: invert(100%);
+}
+
+.sidebar button {
     border: 0;
     background-color: transparent;
 }
 
 
 .article {
-    background-color: rgb(208, 208, 208);
+    background-color: rgb(234, 241, 241);
     grid-area: 2/ 2/ -1 / -1;
 }
