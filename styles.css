@@ -1,0 +1,32 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 1fr 6fr;
+    width: 100vw;
+    height: 100vh; 
+}
+
+.header {
+    background-color : white;
+    color:red;
+    grid-area:1/ 2/ 2 / -1;
+}
+
+.sidebar {
+    background-color: rgb(44, 182, 228);
+    grid-area: 1 / 1 / -1 / 2;
+}
+
+.article {
+    background-color: rgb(208, 208, 208);
+    grid-area: 2/ 2/ -1 / -1;
+}
+
